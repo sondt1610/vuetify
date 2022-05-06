@@ -64,6 +64,8 @@ export default CalendarWithEvents.extend({
   }),
 
   computed: {
+        console.log('🚀 ~ fetchPrevMessTip ~ foundMessIndex', 111);
+
     parsedValue (): CalendarTimestamp {
       return (validateTimestamp(this.value)
         ? parseTimestamp(this.value, true)
